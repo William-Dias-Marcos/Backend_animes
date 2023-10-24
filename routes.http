@@ -2,12 +2,13 @@ POST http://localhost:3333/animes
 Content-Type: application/json
 
 {
-  "name": "Jujutsu Kaisen",
-  "urlImg": "https://m.media-amazon.com/images/I/811NcGVbE+L._AC_UF1000,1000_QL80_.jpg",
+  "name": "One Piece",
+  "urlImg": "https://lh3.googleusercontent.com/pw/ADCreHczznlulEijqzfj5msS-FHWgCdVCc8X2SzaItPyxnOn8dcdZuFAmR8_dN1x4nu_4LCzTxACSbU2jDz7vHg1OsD9_qErvOLs_LdZ8_xmfvdVGsd14_-w0kqbrg8Az5C2JDd71pnQZdjTr1dSD0h_ox7w=w1024-h576-s-no?authuser=0",
   "likes": 0
 }
 
 ###
+
 
 GET  http://localhost:3333/animes
 
@@ -24,7 +25,7 @@ Content-Type: application/json
 
 ###
 
-DELETE  http://localhost:3333/animes/276abaa4-9e55-4476-801c-ab96a1b5b938
+DELETE  http://localhost:3333/animes/04cdfa17-39fe-4f32-9165-797ba2caa161
 
 
 ###

@@ -1,10 +1,17 @@
 import { fastify } from 'fastify'
 // import { DatabaseMemory } from './database-memory.js'
 import { DatabasePostgres } from './database-postgres.js'
+import fastifyCors from '@fastify/cors'
 
 const server = fastify()
 // const database = new DatabaseMemory() 
 const database = new DatabasePostgres
+
+
+server.register(fastifyCors, {
+  origin: true, // Habilita todas as origens
+  methods: ['GET', 'PUT', 'POST', 'DELETE'] // Métodos permitidos
+})
 
 //para o adm criar um novo anime
 server.post('/animes', async (request, replay) =>{
